@@ -1,0 +1,586 @@
+<%-include('../templates/components/header.ejs') %>
+
+<!--========================== Banner Section Start ==========================-->
+<section class="banner-five banner bg-white">
+  <div class="container container-two">
+    <div class="row gy-4">
+      <div class="col-lg-6">
+        <div class="banner-inner position-relative">
+          <div class="banner-content">
+            <span class="banner-content__subtitle text-uppercase font-14"
+              >Construction Group</span
+            >
+            <h1 class="banner-content__title">
+              Invest today in You <span class="text-gradient">Dream Land</span>
+            </h1>
+            <p class="banner-content__desc font-18">
+              Unlock the Power of Real Estate Making Your Real Estate Dreams a
+              Reality Real Estate here Unlock the Power of Real Estate
+            </p>
+            <div class="banner-content__button">
+              <a href="#" class="btn btn-main fw-normal"
+                >Learn More
+                <span class="icon-right">
+                  <i class="fas fa-arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-0 order-1">
+        <div class="banner-five__thumb">
+          <img src="public/images/thumbs/banner-five-img.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--========================== Banner Section End ==========================-->
+
+<!-- ======================== About Section Start ========================== -->
+<section class="about padding-y-120">
+  <div class="container container-two">
+    <div class="row gy-4 align-items-center">
+      <div class="col-lg-6">
+        <div class="about-thumb">
+          <img src="public/images/thumbs/about-img.png" alt="" />
+          <div class="client-statistics flx-align">
+            <span class="client-statistics__icon">
+              <i class="fas fa-map text-gradient"></i>
+            </span>
+            <div class="client-statistics__content">
+              <h5 class="client-statistics__number statisticsCounter">350+</h5>
+              <span class="client-statistics__text fs-18"
+                >Bigha's of Lands</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="about-content">
+          <div class="section-heading style-left">
+            <span class="section-heading__subtitle bg-gray-100">
+              <span class="text-gradient fw-semibold">About Us</span>
+            </span>
+            <h2 class="section-heading__title">
+              Stay with us feel at home Your perfect stay awaits
+            </h2>
+            <p class="section-heading__desc">
+              Real Estate is a vast industry that deals with the buying,
+              selling, and renting of properties. It inv transactions related to
+              residential
+            </p>
+          </div>
+          <div class="about-box d-flex">
+            <div class="about-box__icon">
+              <img src="public/images/icons/about-icon.svg" alt="" />
+            </div>
+            <div class="about-box__content">
+              <h6 class="about-box__title">Your Dream Home Awaits</h6>
+              <p class="about-box__desc font-13">
+                Real Estate is a vast industry that deals with the buying,
+                selling, and renting of properties. It inv transactions related
+                to residential, commercial, and industrial properties
+              </p>
+            </div>
+          </div>
+          <div class="about-button">
+            <a href="#" class="btn btn-main"
+              >Learn More
+              <span class="icon-right">
+                <i class="fas fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================== About Section End ========================== -->
+
+<!-- Card with Investor and Customer Buttons -->
+<section
+  id="choose-option"
+  class="user-type-selection padding-y-60"
+  style="background-color: #f7f7f7"
+>
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-heading__subtitle bg-white">
+        <span class="text-gradient fw-semibold">Select Type</span>
+      </span>
+      <h2 class="section-heading__title">Choose Who Your Are</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-10 text-center">
+        <button
+          type="button"
+          class="btn btn-main btn-lg me-3"
+          data-bs-toggle="modal"
+          data-bs-target="#investorModal"
+          style="width: 150px"
+        >
+          Investor
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-main btn-lg"
+          data-bs-toggle="modal"
+          data-bs-target="#customerModal"
+          style="width: 150px"
+        >
+          Customer
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Investor Modal -->
+<div
+  class="modal fade"
+  id="investorModal"
+  tabindex="-1"
+  aria-labelledby="investorModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="investorModalLabel">
+          Investor Information
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <p class="pb-5">
+          Welcome, Investor! Fill the details for account Register
+        </p>
+        <form>
+          <div class="row gy-lg-4 gy-3">
+            <div class="col-sm-6 col-xs-6">
+              <label for="username" class="form-label">Username</label>
+              <input
+                type="text"
+                class="common-input"
+                placeholder="User Name"
+                id="username"
+              />
+            </div>
+            <div class="col-sm-6 col-xs-6">
+              <label for="Email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="common-input"
+                placeholder="Email"
+                id="Email"
+              />
+            </div>
+            <div class="col-12">
+              <label for="your-password" class="form-label">Password</label>
+              <div class="position-relative">
+                <input
+                  type="password"
+                  class="common-input"
+                  placeholder="Password"
+                  id="your-password"
+                />
+                <span
+                  class="password-show-hide fas fa-eye toggle-password la-eye-slash"
+                  id="#your-password"
+                ></span>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group py-2 flx-between">
+                <div class="common-check mb-0">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="remember"
+                  />
+                  <label class="form-check-label" for="remember"
+                    >Remember me
+                  </label>
+                </div>
+                <a
+                  href="#"
+                  class="forgot-password text-decoration-underline text-main text-poppins font-14"
+                  >Forgot Password?</a
+                >
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-main w-100">
+                Login
+                <span class="icon-right">
+                  <i class="far fa-paper-plane"></i>
+                </span>
+              </button>
+            </div>
+            <div class="col-sm-12 mb-0">
+              <div class="have-account text-center">
+                <p class="text">
+                  Don't Have An Account?
+                  <a
+                    class="link text-main text-decoration-underline font-14 text-poppins"
+                    href="register"
+                    >Register</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Customer Modal -->
+<div
+  class="modal fade"
+  id="customerModal"
+  tabindex="-1"
+  aria-labelledby="customerModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="customerModalLabel">
+          Customer Information
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Welcome, Customer! Here you can find information about our properties
+          and services.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================= Property Section Start ================================== -->
+<section class="property-type padding-y-120">
+  <div class="container container-two">
+    <div class="section-heading">
+      <span class="section-heading__subtitle bg-gray-100">
+        <span class="text-gradient fw-semibold">Project Phases</span>
+      </span>
+      <h2 class="section-heading__title text-nowrap">
+        Here you can find the development <br />
+        phase of the project
+      </h2>
+    </div>
+    <div class="row gy-4">
+      <div class="col-lg-4 col-sm-6 col-xs-6">
+        <div class="property-type-item">
+          <span class="property-type-item__icon">
+            <img src="public/images/icons/property-type-icon1.svg" alt="" />
+          </span>
+          <h6 class="property-type-item__title text-nowrap">
+            Phase 1 (Months 1-6)
+          </h6>
+          <p class="property-type-item__desc font-18">
+            Completion of legal and registration processes, initial land
+            clearing, and boundary wall construction.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 col-xs-6">
+        <div class="property-type-item">
+          <span class="property-type-item__icon">
+            <img src="public/images/icons/property-type-icon2.svg" alt="" />
+          </span>
+          <h6 class="property-type-item__title text-nowrap">
+            Phase 2 (Months 7-12)
+          </h6>
+          <p class="property-type-item__desc font-18">
+            Internal roads and essential infrastructure development.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 col-xs-6">
+        <div class="property-type-item">
+          <span class="property-type-item__icon">
+            <img src="public/images/icons/property-type-icon3.svg" alt="" />
+          </span>
+          <h6 class="property-type-item__title text-nowrap">
+            Phase 3 (Months 13-18)
+          </h6>
+          <p class="property-type-item__desc font-18">
+            Final touches on amenities and preparation for sales launch.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================= Property Section End ================================== -->
+
+<!-- Project Details Start -->
+
+<section class="about-three bg-gray-100 padding-y-120">
+  <div class="container container-two">
+    <div class="row gy-4">
+      <div class="col-lg-6">
+        <div class="about-content">
+          <div class="section-heading style-left">
+            <span class="section-heading__subtitle bg-white">
+              <span class="text-gradient fw-semibold">Project Details</span>
+            </span>
+            <h2 class="section-heading__title">Property Name: Usthi Village</h2>
+            <p class="section-heading__desc font-18">
+              Usthi Village offers a unique opportunity to invest in a
+              strategically positioned real estate project with high potential
+              returns. As Kolkata's urban sprawl reaches suburban areas like
+              Usthi Crossing, the demand for residential plots is rising. Usthi
+              Village is ideally located to capitalize on this trend, offering a
+              blend of accessibility, serenity, and modern amenities.
+            </p>
+          </div>
+          <ul class="check-list style-two">
+            <li class="check-list__item d-flex align-items-center">
+              <span class="icon"><i class="fas fa-check"></i></span>
+              <span class="text fw-semibold"
+                >Total Area: 400 Bighas (approx)</span
+              >
+            </li>
+            <li class="check-list__item d-flex align-items-center">
+              <span class="icon"><i class="fas fa-check"></i></span>
+              <span class="text fw-semibold">
+                Location: Usthi Crossing with ease access to key landmarks</span
+              >
+            </li>
+            <li class="check-list__item d-flex align-items-center">
+              <span class="icon"><i class="fas fa-check"></i></span>
+              <span class="text fw-semibold"
+                >5.5 kms from Ibiza (Approx. 12 minutes drive.)</span
+              >
+            </li>
+            <li class="check-list__item d-flex align-items-center">
+              <span class="icon"><i class="fas fa-check"></i></span>
+              <span class="text fw-semibold"
+                >25.5km from Alipore Mint (Approx. 45 minutes drive.)</span
+              >
+            </li>
+          </ul>
+          <div class="about-button">
+            <a href="/residential_plot" class="btn btn-outline-main bg-white"
+              >Learn More
+              <span class="icon-right">
+                <i class="fas fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="about-three-thumb">
+          <div class="about-three-thumb__inner">
+            <img src="public/images/thumbs/about-three-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Project Details Ends -->
+
+<!-- ========================= Message Section Start ======================== -->
+<section class="message">
+  <div class="container container-two">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="message-thumb">
+          <img
+            src="public/images/thumbs/message-img.png"
+            alt=""
+            class="cover-img"
+          />
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="form-box">
+          <h2 class="form-box__title">Get Details</h2>
+          <form action="#">
+            <div class="row gy-30">
+              <div class="col-sm-6 col-xs-6">
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    class="common-input common-input--withIcon"
+                    placeholder="Name"
+                  />
+                  <span class="input-icon"><i class="fas fa-user"></i></span>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-6">
+                <div class="position-relative">
+                  <input
+                    type="tel"
+                    class="common-input common-input--withIcon"
+                    placeholder="Your Phone"
+                  />
+                  <span class="input-icon"><i class="fas fa-phone"></i></span>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-6">
+                <div class="position-relative">
+                  <input
+                    type="email"
+                    class="common-input common-input--withIcon"
+                    placeholder="Your Email"
+                  />
+                  <span class="input-icon"
+                    ><i class="fas fa-paper-plane"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-6">
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    class="common-input common-input--withIcon"
+                    placeholder="Your Address"
+                  />
+                  <span class="input-icon"
+                    ><i class="fas fa-map-marker-alt"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="position-relative">
+                  <textarea
+                    class="common-input common-input--withIcon"
+                    placeholder="Write Message.."
+                  ></textarea>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <button type="submit" class="btn btn-main w-100">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ========================= Message Section End ======================== -->
+
+<!-- ==================== Testimonials Section Start ==================== -->
+<!-- <section class="testimonial padding-y-60">
+  <div class="container container-two">
+    <div class="section-heading style-left style-flex">
+      <div class="section-heading__inner">
+        <span class="section-heading__subtitle">
+          <span class="text-gradient fw-semibold">Client Testimonial</span>
+        </span>
+        <h2 class="section-heading__title">
+          Optimum Homes & Properties property for you
+        </h2>
+      </div>
+      <p class="section-heading__desc">
+        Use receiving accounts a number a currencies and get paid like a local
+        Use receivin accounts a number paid the most beautiful think
+      </p>
+    </div>
+    <div class="testimonial__inner">
+      <div class="row">
+        <div class="col-lg-6 col-md-8">
+          <div class="testimonial-box">
+            <div class="testimonial-item">
+              <div class="testimonial-item__top flx-between">
+                <div class="testimonial-item__info">
+                  <h6 class="testimonial-item__name">Sakib Fahad</h6>
+                  <span class="testimonial-item__designation"
+                    >Content Creator</span
+                  >
+                </div>
+                <img src="public/images/icons/quote.svg" alt="" />
+              </div>
+              <p class="testimonial-item__desc">
+                Their product exceeded his my routi expectations. The the
+                quality and attention to detail a the a moutstanding and it has
+                become an essential most a education the a man who can do tant
+                clearly
+              </p>
+              <ul class="star-rating flx-align justify-content-end">
+                <li class="star-rating__item"><i class="fas fa-star"></i></li>
+                <li class="star-rating__item"><i class="fas fa-star"></i></li>
+                <li class="star-rating__item"><i class="fas fa-star"></i></li>
+                <li class="star-rating__item"><i class="fas fa-star"></i></li>
+                <li class="star-rating__item unabled">
+                  <i class="fas fa-star"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="testimonial-item">
+              <div class="testimonial-item__top flx-between">
+                <div class="testimonial-item__info">
+                  <h6 class="testimonial-item__name">John Doe</h6>
+                  <span class="testimonial-item__designation"
+                    >Frontend Developer</span
+                  >
+                </div>
+                <img src="public/images/icons/quote.svg" alt="" />
+              </div>
+              <p class="testimonial-item__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                autem! Consectetur illo tempora sed repudiandae eaque velit
+                expedita, ipsa earum explicabo libero, voluptatibus aliquid odio
+              </p>
+              <ul class="star-rating flx-align justify-content-end">
+                <li class="star-rating__item"><i class="fas fa-star"></i></li>
+                <li class="star-rating__item"><i class="fas fa-star"></i></li>
+                <li class="star-rating__item"><i class="fas fa-star"></i></li>
+                <li class="star-rating__item"><i class="fas fa-star"></i></li>
+                <li class="star-rating__item unabled">
+                  <i class="fas fa-star"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="testimonial-thumb">
+            <img
+              src="public/images/thumbs/testimonial-img.png"
+              alt=""
+              class="cover-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- ==================== Testimonials Section End ==================== -->
+
+<%-include('../templates/components/footer.ejs') %>

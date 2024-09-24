@@ -1,0 +1,958 @@
+<%-include('../templates/components/header.ejs') %>
+
+<!--========================== Banner Section Start ==========================-->
+<section class="banner-five banner bg-white">
+  <div class="container container-two">
+    <div class="row gy-4">
+      <div class="col-lg-6">
+        <div class="banner-inner position-relative">
+          <div class="banner-content">
+            <span class="banner-content__subtitle text-uppercase font-14"
+              >Construction Group</span
+            >
+            <h1 class="banner-content__title">
+              Invest today in You <span class="text-gradient">Dream Land</span>
+            </h1>
+            <p class="banner-content__desc font-18">
+              Innovation Construction Group, established in 2024, is a leading
+              provider of premium residential plots. We specialize in offering
+              strategically located land parcels for your dream home.
+            </p>
+            <div class="banner-content__button">
+              <!-- <a href="#" class="btn btn-main fw-normal"
+                >Learn More
+                <span class="icon-right">
+                  <i class="fas fa-arrow-right"></i>
+                </span>
+              </a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-0 order-1">
+        <div class="banner-five__thumb">
+          <img src="public/images/thumbs/banner-five-img.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--========================== Banner Section End ==========================-->
+
+<!-- ======================== About Section Start ========================== -->
+<section class="about padding-y-120">
+  <div class="container container-two">
+    <div class="row gy-4 align-items-center">
+      <div class="col-lg-6">
+        <div class="about-thumb">
+          <img src="public/images/thumbs/about-img.png" alt="" />
+          <div class="client-statistics flx-align">
+            <span class="client-statistics__icon">
+              <i class="fas fa-map text-gradient"></i>
+            </span>
+            <div class="client-statistics__content">
+              <h5 class="client-statistics__number statisticsCounter">350+</h5>
+              <span class="client-statistics__text fs-18"
+                >Bigha's of Lands</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="about-content">
+          <div class="section-heading style-left">
+            <span class="section-heading__subtitle bg-gray-100">
+              <span class="text-gradient fw-semibold">About Us</span>
+            </span>
+            <h2 class="section-heading__title">Here is the About Heading</h2>
+            <p class="section-heading__desc">
+              Here is your about description going on.
+            </p>
+          </div>
+          <div class="about-box d-flex">
+            <div class="about-box__icon">
+              <img src="public/images/icons/about-icon.svg" alt="" />
+            </div>
+            <div class="about-box__content">
+              <h6 class="about-box__title">Your Dream Home Plots Awaits</h6>
+              <p class="about-box__desc font-13">
+                Here is your about description going on.
+              </p>
+            </div>
+          </div>
+          <div class="about-button">
+            <a href="/about" class="btn btn-main"
+              >Learn More
+              <span class="icon-right">
+                <i class="fas fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================== About Section End ========================== -->
+
+<!-- Card with Investor and Customer Buttons -->
+<section
+  id="choose-option"
+  class="user-type-selection padding-y-60"
+  style="background-color: #f7f7f7"
+>
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-heading__subtitle bg-white">
+        <span class="text-gradient fw-semibold">Select Type</span>
+      </span>
+      <h2 class="section-heading__title">Choose Who Your Are</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-10 text-center">
+        <button
+          type="button"
+          class="btn btn-main btn-lg me-3"
+          data-bs-toggle="modal"
+          data-bs-target="#investorModal"
+          style="width: 150px"
+        >
+          Investor
+        </button>
+        <button
+          type="button"
+          class="btn btn-main btn-lg"
+          data-bs-toggle="modal"
+          data-bs-target="#customerModal"
+          style="width: 150px"
+        >
+          Customer
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Investor Modal -->
+<div
+  class="modal fade"
+  id="investorModal"
+  tabindex="-1"
+  aria-labelledby="investorModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="investorModalLabel">Investor Account</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-center mb-4">
+          Welcome, Investor! Choose to register or login to your account.
+        </p>
+        <div class="d-flex justify-content-center mb-4">
+          <ul class="nav nav-pills" id="investorTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active btn btn-main me-2"
+                id="register-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#register"
+                type="button"
+                role="tab"
+                aria-controls="register"
+                aria-selected="true"
+              >
+                Register
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link btn btn-outline-main"
+                id="login-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#login"
+                type="button"
+                role="tab"
+                aria-controls="login"
+                aria-selected="false"
+              >
+                Login
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content" id="investorTabsContent">
+          <div
+            class="tab-pane fade show active"
+            id="register"
+            role="tabpanel"
+            aria-labelledby="register-tab"
+          >
+            <form id="registerForm">
+              <div class="row gy-lg-4 gy-3">
+                <div class="col-sm-6 col-xs-6">
+                  <label for="fullname" class="form-label">Fullname</label>
+                  <input
+                    type="text"
+                    class="common-input"
+                    placeholder="User Name"
+                    id="fullname"
+                    required
+                  />
+                </div>
+                <div class="col-sm-6 col-xs-6">
+                  <label for="Email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="common-input"
+                    placeholder="Email"
+                    id="Email"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="your-password" class="form-label">Password</label>
+                  <div class="position-relative">
+                    <input
+                      type="password"
+                      class="common-input"
+                      placeholder="Password"
+                      id="your-password"
+                      required
+                    />
+                    <span
+                      class="password-show-hide fas fa-eye toggle-password la-eye-slash"
+                      id="#your-password"
+                    ></span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="confirm-password" class="form-label"
+                    >Confirm Password</label
+                  >
+                  <div class="position-relative">
+                    <input
+                      type="password"
+                      class="common-input"
+                      placeholder="Password"
+                      id="confirm-password"
+                      required
+                    />
+                    <span
+                      class="password-show-hide fas fa-eye toggle-password la-eye-slash"
+                      id="#confirm-password"
+                    ></span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-main w-100">
+                    Register
+                    <span class="icon-right">
+                      <i class="far fa-paper-plane"></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="login"
+            role="tabpanel"
+            aria-labelledby="login-tab"
+          >
+            <form id="loginForm">
+              <div class="row gy-lg-4 gy-3">
+                <div class="col-12">
+                  <label for="login-email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="common-input"
+                    placeholder="Email"
+                    id="login-email"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="login-password" class="form-label"
+                    >Password</label
+                  >
+                  <div class="position-relative">
+                    <input
+                      type="password"
+                      class="common-input"
+                      placeholder="Password"
+                      id="login-password"
+                      required
+                    />
+                    <span
+                      class="password-show-hide fas fa-eye toggle-password la-eye-slash"
+                      id="#login-password"
+                    ></span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group py-2 flx-between">
+                    <div class="common-check mb-0">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="remember"
+                      />
+                      <label class="form-check-label" for="remember"
+                        >Remember me
+                      </label>
+                    </div>
+                    <a
+                      href="#"
+                      class="forgot-password text-decoration-underline text-main text-poppins font-14"
+                      >Forgot Password?</a
+                    >
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-main w-100">
+                    Login
+                    <span class="icon-right">
+                      <i class="far fa-paper-plane"></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Customer Modal -->
+<div
+  class="modal fade"
+  id="customerModal"
+  tabindex="-1"
+  aria-labelledby="customerModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="customerModalLabel">Customer Account</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-center mb-4">
+          Welcome, Customer! Choose to register or login to your account.
+        </p>
+        <div class="d-flex justify-content-center mb-4">
+          <ul class="nav nav-pills" id="customerTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active btn btn-main me-2"
+                id="customer-login-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#customer-login"
+                type="button"
+                role="tab"
+                aria-controls="customer-login"
+                aria-selected="true"
+              >
+                Login
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link btn btn-outline-main"
+                id="customer-register-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#customer-register"
+                type="button"
+                role="tab"
+                aria-controls="customer-register"
+                aria-selected="false"
+              >
+                Register
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content" id="customerTabsContent">
+          <div
+            class="tab-pane fade show active"
+            id="customer-login"
+            role="tabpanel"
+            aria-labelledby="customer-login-tab"
+          >
+            <form id="customerLoginForm">
+              <div class="row gy-lg-4 gy-3">
+                <div class="col-12">
+                  <label for="customer-login-email" class="form-label"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="common-input"
+                    placeholder="Email"
+                    id="customer-login-email"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="customer-login-password" class="form-label"
+                    >Password</label
+                  >
+                  <div class="position-relative">
+                    <input
+                      type="password"
+                      class="common-input"
+                      placeholder="Password"
+                      id="customer-login-password"
+                      required
+                    />
+                    <span
+                      class="password-show-hide fas fa-eye toggle-password la-eye-slash"
+                      id="#customer-login-password"
+                    ></span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group py-2 flx-between">
+                    <div class="common-check mb-0">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="customer-remember"
+                      />
+                      <label class="form-check-label" for="customer-remember"
+                        >Remember me
+                      </label>
+                    </div>
+                    <a
+                      href="#"
+                      class="forgot-password text-decoration-underline text-main text-poppins font-14"
+                      >Forgot Password?</a
+                    >
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-main w-100">
+                    Login
+                    <span class="icon-right">
+                      <i class="far fa-paper-plane"></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="customer-register"
+            role="tabpanel"
+            aria-labelledby="customer-register-tab"
+          >
+            <form id="customerRegisterForm">
+              <div class="row gy-lg-4 gy-3">
+                <div class="col-sm-6 col-xs-6">
+                  <label for="customer-register-name" class="form-label"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    class="common-input"
+                    placeholder="Full Name"
+                    id="customer-register-name"
+                    required
+                  />
+                </div>
+                <div class="col-sm-6 col-xs-6">
+                  <label for="customer-register-email" class="form-label"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="common-input"
+                    placeholder="Email"
+                    id="customer-register-email"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="customer-register-password" class="form-label"
+                    >Password</label
+                  >
+                  <div class="position-relative">
+                    <input
+                      type="password"
+                      class="common-input"
+                      placeholder="Password"
+                      id="customer-register-password"
+                      required
+                    />
+                    <span
+                      class="password-show-hide fas fa-eye toggle-password la-eye-slash"
+                      id="#customer-register-password"
+                    ></span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label
+                    for="customer-register-confirm-password"
+                    class="form-label"
+                    >Confirm Password</label
+                  >
+                  <div class="position-relative">
+                    <input
+                      type="password"
+                      class="common-input"
+                      placeholder="Confirm Password"
+                      id="customer-register-confirm-password"
+                      required
+                    />
+                    <span
+                      class="password-show-hide fas fa-eye toggle-password la-eye-slash"
+                      id="#customer-register-confirm-password"
+                    ></span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-main w-100">
+                    Register
+                    <span class="icon-right">
+                      <i class="far fa-paper-plane"></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ======================= Property Section Start ================================== -->
+<section class="property-type padding-y-120">
+  <div class="container container-two">
+    <div class="section-heading">
+      <span class="section-heading__subtitle bg-gray-100">
+        <span class="text-gradient fw-semibold">Project Phases</span>
+      </span>
+      <h2 class="section-heading__title">
+        Here you can find the development
+        <span class="d-none d-md-inline"><br /></span>
+        <span class="d-inline d-md-none"> </span>
+        phase of the project
+      </h2>
+    </div>
+    <div class="row gy-4">
+      <div class="col-lg-4 col-sm-6 col-xs-6">
+        <div class="property-type-item">
+          <span class="property-type-item__icon">
+            <img src="public/images/icons/property-type-icon1.svg" alt="" />
+          </span>
+          <h6 class="property-type-item__title text-nowrap">
+            Phase 1 (Months 1-3)
+          </h6>
+          <p class="property-type-item__desc font-18">
+            Completion of legal and registration processes, initial land
+            clearing, and boundary wall construction.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 col-xs-6">
+        <div class="property-type-item">
+          <span class="property-type-item__icon">
+            <img src="public/images/icons/property-type-icon2.svg" alt="" />
+          </span>
+          <h6 class="property-type-item__title text-nowrap">
+            Phase 2 (Months 4-6)
+          </h6>
+          <p class="property-type-item__desc font-18">
+            Internal roads and essential infrastructure development.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 col-xs-6">
+        <div class="property-type-item">
+          <span class="property-type-item__icon">
+            <img src="public/images/icons/property-type-icon3.svg" alt="" />
+          </span>
+          <h6 class="property-type-item__title text-nowrap">
+            Phase 3 (Months 7-9)
+          </h6>
+          <p class="property-type-item__desc font-18">
+            Final touches on amenities and preparation for Delivery.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================= Property Section End ================================== -->
+
+<!-- Project Details Start -->
+
+<section class="about-three bg-gray-100 padding-y-120">
+  <div class="container container-two">
+    <div class="row gy-4">
+      <div class="col-lg-6">
+        <div class="about-content">
+          <div class="section-heading style-left">
+            <span class="section-heading__subtitle bg-white">
+              <span class="text-gradient fw-semibold">Project Details</span>
+            </span>
+            <h2 class="section-heading__title">Property Name: Usthi Village</h2>
+            <p class="section-heading__desc font-18">
+              Usthi Village offers a unique opportunity to invest in a
+              strategically positioned real estate project with high potential
+              returns. As Kolkata's urban sprawl reaches suburban areas like
+              Usthi Crossing, the demand for residential plots is rising. Usthi
+              Village is ideally located to capitalize on this trend, offering a
+              blend of accessibility, serenity, and modern amenities.
+            </p>
+          </div>
+          <ul class="check-list style-two">
+            <li class="check-list__item d-flex align-items-center">
+              <span class="icon"><i class="fas fa-check"></i></span>
+              <span class="text fw-semibold"
+                >Total Area: 400 Bighas (approx)</span
+              >
+            </li>
+            <li class="check-list__item d-flex align-items-center">
+              <span class="icon"><i class="fas fa-check"></i></span>
+              <span class="text fw-semibold">
+                Location: Usthi Crossing with ease access to key landmarks</span
+              >
+            </li>
+            <li class="check-list__item d-flex align-items-center">
+              <span class="icon"><i class="fas fa-check"></i></span>
+              <span class="text fw-semibold"
+                >5.5 kms from Ibiza (Approx. 12 minutes drive.)</span
+              >
+            </li>
+            <li class="check-list__item d-flex align-items-center">
+              <span class="icon"><i class="fas fa-check"></i></span>
+              <span class="text fw-semibold"
+                >25.5km from Alipore Mint (Approx. 45 minutes drive.)</span
+              >
+            </li>
+          </ul>
+          <div class="about-button">
+            <a href="/residential_plot" class="btn btn-outline-main bg-white"
+              >Learn More
+              <span class="icon-right">
+                <i class="fas fa-arrow-right"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div>
+          <!-- //class="about-three-thumb" -->
+          <div class="about-three-thumb__inner">
+            <!-- <img src="public/images/thumbs/about-three-img.png" alt="" /> -->
+            <div
+              style="
+                position: relative;
+                padding-bottom: 100%;
+                height: 0;
+                overflow: hidden;
+              "
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3509.1143562295492!2d88.27086507506891!3d22.286299979696693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDE3JzEwLjciTiA4OMKwMTYnMjQuNCJF!5e1!3m2!1sen!2sin!4v1727028481258!5m2!1sen!2sin"
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  border: 0;
+                "
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Project Details Ends -->
+
+<!-- ========================= Message Section Start ======================== -->
+<section class="message">
+  <div class="container container-two">
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="message-thumb">
+          <img
+            src="public/images/thumbs/message-img.png"
+            alt=""
+            class="cover-img"
+          />
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <div class="form-box">
+          <h2 class="form-box__title">Get Details</h2>
+          <form action="#">
+            <div class="row gy-30">
+              <div class="col-sm-6 col-xs-6">
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    class="common-input common-input--withIcon"
+                    placeholder="Name"
+                  />
+                  <span class="input-icon"><i class="fas fa-user"></i></span>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-6">
+                <div class="position-relative">
+                  <input
+                    type="tel"
+                    class="common-input common-input--withIcon"
+                    placeholder="Your Phone"
+                  />
+                  <span class="input-icon"><i class="fas fa-phone"></i></span>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-6">
+                <div class="position-relative">
+                  <input
+                    type="email"
+                    class="common-input common-input--withIcon"
+                    placeholder="Your Email"
+                  />
+                  <span class="input-icon"
+                    ><i class="fas fa-paper-plane"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-6">
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    class="common-input common-input--withIcon"
+                    placeholder="Your Address"
+                  />
+                  <span class="input-icon"
+                    ><i class="fas fa-map-marker-alt"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="position-relative">
+                  <textarea
+                    class="common-input common-input--withIcon"
+                    placeholder="Write Message.."
+                  ></textarea>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <button type="submit" class="btn btn-main w-100">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ========================= Message Section End ======================== -->
+
+<!-- ==================== Testimonials Section Start ==================== -->
+<!-- <section class="testimonial padding-y-60">
+  <div class="container container-two">
+    <div class="section-heading style-left style-flex">
+      <div class="section-heading__inner">
+        <span class="section-heading__subtitle">
+          <span class="text-gradient fw-semibold">Client Testimonial</span>
+        </span>
+        <h2 class="section-heading__title">
+          Optimum Homes & Properties property for you
+        </h2>
+      </div>
+      <p class="section-heading__desc">
+        Use receiving accounts a number a currencies and get paid like a local
+        Use receivin accounts a number paid the most beautiful think
+      </p>
+    </div>
+    <div class="testimonial__inner">
+      <div class="row">
+        <div class="col-lg-6 col-md-8">
+          <div class="testimonial-box">
+            <div class="testimonial-item">
+              <div class="testimonial-item__top flx-between">
+                <div class="testimonial-item__info">
+                  <h6 class="testimonial-item__name">Sakib Fahad</h6>
+                  <span class="testimonial-item__designation"
+                    >Content Creator</span
+                  >
+                </div>
+                <img src="public/images/icons/quote.svg" alt="" />
+              </div>
+              <p class="testimonial-item__desc">
+                Their product exceeded his my routi expectations. The the
+                quality and attention to detail a the a moutstanding and it has
+                become an essential most a education the a man who can do tant
+                clearly
+              </p>
+              <ul class="star-rating flx-align justify-content-end">
+                <li class="star-rating__item"><i class="fas fa-star"></i></li>
+                <li class="star-rating__item"><i class="fas fa-star"></i></li>
+                <li class="star-rating__item"><i class="fas fa-star"></i></li>
+                <li class="star-rating__item"><i class="fas fa-star"></i></li>
+                <li class="star-rating__item unabled">
+                  <i class="fas fa-star"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="testimonial-item">
+              <div class="testimonial-item__top flx-between">
+                <div class="testimonial-item__info">
+                  <h6 class="testimonial-item__name">John Doe</h6>
+                  <span class="testimonial-item__designation"
+                    >Frontend Developer</span
+                  >
+                </div>
+                <img src="public/images/icons/quote.svg" alt="" />
+              </div>
+              <p class="testimonial-item__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                autem! Consectetur illo tempora sed repudiandae eaque velit
+                expedita, ipsa earum explicabo libero, voluptatibus aliquid odio
+              </p>
+              <ul class="star-rating flx-align justify-content-end">
+                <li class="star-rating__item"><i class="fas fa-star"></i></li>
+                <li class="star-rating__item"><i class="fas fa-star"></i></li>
+                <li class="star-rating__item"><i class="fas fa-star"></i></li>
+                <li class="star-rating__item"><i class="fas fa-star"></i></li>
+                <li class="star-rating__item unabled">
+                  <i class="fas fa-star"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="testimonial-thumb">
+            <img
+              src="public/images/thumbs/testimonial-img.png"
+              alt=""
+              class="cover-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- ==================== Testimonials Section End ==================== -->
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const registerTab = document.getElementById("register-tab");
+    const loginTab = document.getElementById("login-tab");
+
+    loginTab.addEventListener("click", function () {
+      registerTab.classList.remove("btn-main");
+      registerTab.classList.add("btn-outline-main");
+      loginTab.classList.remove("btn-outline-main");
+      loginTab.classList.add("btn-main");
+    });
+
+    registerTab.addEventListener("click", function () {
+      loginTab.classList.remove("btn-main");
+      loginTab.classList.add("btn-outline-main");
+      registerTab.classList.remove("btn-outline-main");
+      registerTab.classList.add("btn-main");
+    });
+  });
+</script>
+
+<!-- // Customer Tab script -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const customerLoginTab = document.getElementById("customer-login-tab");
+    const customerRegisterTab = document.getElementById(
+      "customer-register-tab"
+    );
+
+    customerLoginTab.addEventListener("click", function () {
+      customerRegisterTab.classList.remove("btn-main");
+      customerRegisterTab.classList.add("btn-outline-main");
+      customerLoginTab.classList.remove("btn-outline-main");
+      customerLoginTab.classList.add("btn-main");
+    });
+
+    customerRegisterTab.addEventListener("click", function () {
+      customerLoginTab.classList.remove("btn-main");
+      customerLoginTab.classList.add("btn-outline-main");
+      customerRegisterTab.classList.remove("btn-outline-main");
+      customerRegisterTab.classList.add("btn-main");
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const registerForm = document.getElementById("registerForm");
+    const loginForm = document.getElementById("loginForm");
+
+    function handleSubmit(event) {
+      event.preventDefault();
+      alert("This website is under development and live soon.");
+      event.target.reset();
+    }
+
+    registerForm.addEventListener("submit", handleSubmit);
+    loginForm.addEventListener("submit", handleSubmit);
+  });
+</script>
+
+<!-- // Customer field Clear And alert Show logics. -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const customerLoginForm = document.getElementById("customerLoginForm");
+    const customerRegisterForm = document.getElementById(
+      "customerRegisterForm"
+    );
+
+    function handleSubmit(event) {
+      event.preventDefault();
+      alert("This website is under development and live soon.");
+      event.target.reset();
+    }
+
+    customerLoginForm.addEventListener("submit", handleSubmit);
+    customerRegisterForm.addEventListener("submit", handleSubmit);
+  });
+</script>
+
+<%-include('../templates/components/footer.ejs') %>

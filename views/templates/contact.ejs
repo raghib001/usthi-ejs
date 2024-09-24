@@ -1,0 +1,143 @@
+<%-include('../templates/components/header.ejs') %>
+
+<!-- ==================== Breadcrumb Start Here ==================== -->
+<section class="breadcrumb padding-y-120">
+  <img
+    src="public/images/thumbs/breadcrumb-img.png"
+    alt=""
+    class="breadcrumb__img"
+  />
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="breadcrumb__wrapper">
+          <h2 class="breadcrumb__title">Contact Us</h2>
+          <ul class="breadcrumb__list">
+            <li class="breadcrumb__item">
+              <a href="/" class="breadcrumb__link">
+                <i class="las la-home"></i> Home</a
+              >
+            </li>
+            <li class="breadcrumb__item"><i class="fas fa-angle-right"></i></li>
+            <li class="breadcrumb__item">
+              <span class="breadcrumb__item-text">Contact Us</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ==================== Breadcrumb End Here ==================== -->
+
+<!-- ============================= Contact Top Section Start ======================= -->
+<section class="contact-top padding-y-120">
+  <div class="container container-two">
+    <div class="section-heading">
+      <span class="section-heading__subtitle bg-gray-100">
+        <span class="text-gradient fw-semibold">Contact</span>
+      </span>
+      <h2 class="section-heading__title">Contact Us!</h2>
+    </div>
+    <div class="row gy-4">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="contact-card h-100">
+          <span class="contact-card__icon">
+            <i class="fas fa-paper-plane"></i>
+          </span>
+          <h5 class="contact-card__title">Email</h5>
+          <p class="contact-card__text font-18">
+            <a href="mailto:rohit.kayan@gmail.com" class="link">
+              rohit.kayan@gmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="contact-card h-100">
+          <span class="contact-card__icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </span>
+          <h5 class="contact-card__title">Location</h5>
+          <a href="https://maps.app.goo.gl/GBCT5EibKNdtDsUC8" target="_blank">
+            <p class="contact-card__text font-18 text-gray-800">
+              7 Lyons Range, 1st floor Room NO.17B, Kolkata 700001
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="contact-card h-100">
+          <span class="contact-card__icon">
+            <i class="fas fa-phone"></i>
+          </span>
+          <h5 class="contact-card__title">Contacts</h5>
+          <p class="contact-card__text font-18">
+            <a href="tel:+919007009009" class="link"> (+91) 9007009009</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ============================= Contact Top Section End ======================= -->
+
+<div class="contact-map address-map">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.1300341437895!2d88.349926!3d22.5742394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277a4c298b7f3%3A0xacf89f36f8ef1bf4!2s7%2C%20Lyons%20Range%2C%20Murgighata%2C%20Dalhousie%2C%20Kolkata%2C%20West%20Bengal%20700001!5e0!3m2!1sen!2sin!4v1726925278239!5m2!1sen!2sin"
+    width="1920"
+    height="400"
+    style="border: 0"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
+
+<section class="contact-us-section padding-b-120">
+  <div class="container container-two">
+    <div class="contact-form bg-white">
+      <div class="section-heading">
+        <span class="section-heading__subtitle bg-gray-100">
+          <span class="text-gradient fw-semibold">Contact us</span>
+        </span>
+        <h2 class="section-heading__title">Do you have any question?</h2>
+        <p class="section-heading__desc">
+          Have questions about our properties or land plots? We're here to help!
+          <br />Reach out to us for expert assistance and guidance.
+        </p>
+      </div>
+      <form action="#" class="contact-form__form">
+        <div class="row gy-4">
+          <div class="col-sm-6 col-xs-6">
+            <input type="text" class="common-input" placeholder="Your Name" />
+          </div>
+          <div class="col-sm-6 col-xs-6">
+            <input
+              type="email"
+              class="common-input"
+              placeholder="Your E-mail"
+            />
+          </div>
+          <div class="col-sm-6 col-xs-6">
+            <input type="tel" class="common-input" placeholder="Phone Number" />
+          </div>
+          <div class="col-sm-6 col-xs-6">
+            <input type="text" class="common-input" placeholder="Subject" />
+          </div>
+          <div class="col-12">
+            <textarea
+              class="common-input"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-main w-100">Submit Now</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<%-include('../templates/components/footer.ejs') %>
